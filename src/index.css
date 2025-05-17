@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+.section {
+  @apply py-8 lg:py-24 lg:h-screen flex items-center;
+}
+
+.active {
+  @apply bg-gradient-to-r from-indigo-500 to-purple-400 rounded-full relative overflow-hidden hover:text-white;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.active::before {
+  @apply absolute top-0 left-[-50%] w-[200%] h-[100%] rounded-full;
+  content: '';
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shine 2s infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.center {
+  @apply grid place-items-center;
+}
