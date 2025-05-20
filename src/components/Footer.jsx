@@ -27,8 +27,8 @@ export default function Footer() {
     { 
       icon: <FaPhoneAlt />, 
       title: 'Phone', 
-      value: '+84 123 456 789', 
-      link: 'tel:+84123456789' 
+      value: '+8868684090', 
+      link: 'tel:+84868684090' 
     }
   ];
 
