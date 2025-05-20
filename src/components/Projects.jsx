@@ -2,47 +2,51 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import PortfolioImg from '../assets/images/portfolio.png'; 
+import Vaxine from '../assets/images/vaxine.png'; 
+import Tutor from '../assets/images/tutor.png'; 
+import Shisha from '../assets/images/shisha.png'; 
+
 export default function Projects() {
   const projects = [
     {
       title: 'SeiSei - Connect Tutor and Student Website',
       description: 'A platform connecting students and tutors, helping students find tutors and tutors find students. Features a beautiful interface that is easy to manage and use',
-      image: {PortfolioImg}, 
+      image: Tutor, 
       category: 'Web Development',
       technologies: ['React'],
       status: 'Completed', 
       liveLink: 'https://example.com',
-      codeLink: 'https://github.com/yourusername/project',
+      codeLink: 'https://github.com/ryderthieu/SeiSei.git',
     },
     {
       title: 'Portfolio Website',
       description: 'A responsive portfolio website built with modern technologies to showcase projects and skills.',
-      image: '../assets/images/portfolio.png', 
+      image: PortfolioImg, 
       category: 'Web Development',
       technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
       status: 'Completed',
       liveLink: 'https://example.com',
-      codeLink: 'https://github.com/yourusername/project',
+      codeLink: 'https://github.com/Puwuu22/the-portfolio.git',
     },
     {
       title: 'Vaxine - Vaccine Tracking App',
       description: 'An vaccination record book that helps easily track vaccination history for yourself and your family, as well as schedule vaccination appointments',
-      image: '../assets/images/portfolio.png',  
+      image: Vaxine,  
       category: 'Mobile Application',
       technologies: ['React Native', 'Firebase'],
       status: 'Completed', 
-      liveLink: 'https://example.com',
-      codeLink: 'https://github.com/yourusername/project',
+      liveLink: 'https://www.figma.com/proto/2v3nkgWMdwDdQXua65wqvE/M%E1%BA%ABu?node-id=26-8632&p=f&t=vIEIYiGxOvufHXCw-1&scaling=min-zoom&content-scaling=fixed&page-id=26%3A7366&starting-point-node-id=26%3A8632',
+      codeLink: 'https://github.com/2itsnhyyy/VaccineApp.git',
     },
     {
       title: 'Oshisha - Find Recipe Cooking',
       description: 'An website to search for cooking recipes, post your own recipes, and connect with others in a food-focused social network',
-      image: '../assets/images/portfolio.png',  
+      image: Shisha,  
       category: 'Web Application',
       technologies: ['React', 'MongoDB', 'Nodejs', 'Expressjs'],
       status: 'In Progress',
-      liveLink: 'https://example.com',
-      codeLink: 'https://github.com/yourusername/project',
+      liveLink: 'https://github.com/ryderthieu/cooking-social-network.git',
+      codeLink: 'https://github.com/ryderthieu/cooking-social-network.git',
     },
   ];
   
@@ -167,7 +171,7 @@ export default function Projects() {
                 className="bg-slate-800/30 rounded-xl overflow-hidden border border-slate-700/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all"
               >
                 {/* Project image */}
-                <div className="h-56 overflow-hidden bg-slate-700/30 relative">
+                <div className="h-80 overflow-hidden bg-slate-700/30 relative">
                   <motion.img 
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.5 }}
