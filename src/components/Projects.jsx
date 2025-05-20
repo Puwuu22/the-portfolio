@@ -15,7 +15,7 @@ export default function Projects() {
       category: 'Web Development',
       technologies: ['React'],
       status: 'Completed', 
-      liveLink: 'https://example.com',
+      liveLink: 'https://github.com/ryderthieu/SeiSei.git',
       codeLink: 'https://github.com/ryderthieu/SeiSei.git',
     },
     {
@@ -25,7 +25,7 @@ export default function Projects() {
       category: 'Web Development',
       technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
       status: 'Completed',
-      liveLink: 'https://example.com',
+      liveLink: 'https://github.com/Puwuu22/the-portfolio.git',
       codeLink: 'https://github.com/Puwuu22/the-portfolio.git',
     },
     {
