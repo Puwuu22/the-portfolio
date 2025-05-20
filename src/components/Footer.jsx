@@ -1,39 +1,63 @@
-import { FaGithub, FaLinkedinIn, FaInstagram, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaInstagram,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaFacebook,
+} from "react-icons/fa";
 
 export default function Footer() {
-  
   // Social links
   const socialLinks = [
-    { icon: <FaGithub />, url: 'https://github.com/Puwuu22', ariaLabel: 'GitHub' },
-    { icon: <FaLinkedinIn />, url: 'https://www.linkedin.com/in/quynh-ttp/', ariaLabel: 'LinkedIn' },
-    { icon: <FaInstagram />, url: '#', ariaLabel: 'Instagram' },
-    { icon: <FaEnvelope />, url: 'mailto:trinhquynh5d@gmail.com', ariaLabel: 'Email' }
+    {
+      icon: <FaGithub />,
+      url: "https://github.com/Puwuu22",
+      ariaLabel: "GitHub",
+    },
+    {
+      icon: <FaLinkedinIn />,
+      url: "https://www.linkedin.com/in/quynh-ttp/",
+      ariaLabel: "LinkedIn",
+    },
+    {
+      icon: <FaFacebook />,
+      url: "https://fb.com/ttpuwu",
+      ariaLabel: "Instagram",
+    },
+    {
+      icon: <FaEnvelope />,
+      url: "mailto:trinhquynh5d@gmail.com",
+      ariaLabel: "Email",
+    },
   ];
 
   // Contact info
   const contactInfo = [
-    { 
-      icon: <FaMapMarkerAlt />, 
-      title: 'Location', 
-      value: 'Thu Duc, Ho Chi Minh City, Vietnam', 
-      link: null 
+    {
+      icon: <FaMapMarkerAlt />,
+      title: "Location",
+      value: "Thu Duc, Ho Chi Minh City, Vietnam",
+      link: null,
     },
-    { 
-      icon: <FaEnvelope />, 
-      title: 'Email', 
-      value: 'trinhquynh5d@gmail.com', 
-      link: 'mailto:trinhquynh5d@gmail.com' 
+    {
+      icon: <FaEnvelope />,
+      title: "Email",
+      value: "trinhquynh5d@gmail.com",
+      link: "mailto:trinhquynh5d@gmail.com",
     },
-    { 
-      icon: <FaPhoneAlt />, 
-      title: 'Phone', 
-      value: '+8868684090', 
-      link: 'tel:+84868684090' 
-    }
+    {
+      icon: <FaPhoneAlt />,
+      title: "Phone",
+      value: "+8868684090",
+      link: "tel:+84868684090",
+    },
   ];
 
   return (
-    <footer className="bg-slate-900/80 backdrop-blur-sm pt-16 pb-8 border-t border-slate-800">
+    <footer className="dark:bg-slate-900/80 bg-indigo-950 backdrop-blur-sm pt-16 pb-8 border-t border-slate-800">
+      <div className="absolute w-100 min-h-screen bottom-[500px] bg-indigo-500/20 -right-50 blur-3xl rounded-full"></div>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           {/* About */}
@@ -43,31 +67,32 @@ export default function Footer() {
               <span className="absolute -bottom-1 left-0 w-12 h-0.5 bg-gradient-to-r from-[#48017a] to-[#ae7edc]"></span>
             </h3>
             <p className="text-white/60 mb-6">
-              A passionate developer focused on creating beautiful and functional web experiences with modern technologies.
+              A passionate developer focused on creating beautiful and
+              functional web experiences with modern technologies.
             </p>
             <div className="flex space-x-3">
               {socialLinks.map((link, index) => (
-                <a 
+                <a
                   key={index}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={link.ariaLabel}
-                  className="w-9 h-9 rounded-full bg-slate-800 hover:bg-[#48017a] flex items-center justify-center text-white/80 hover:text-white transition-colors"
+                  className="w-9 h-9 rounded-full dark:bg-slate-800 bg-zinc-200 hover:bg-[#48017a] flex items-center justify-center dark:text-white/80 text-black/50 hover:text-white transition-colors"
                 >
                   {link.icon}
                 </a>
               ))}
             </div>
           </div>
-          
-            {/* Contact Info */}
+
+          {/* Contact Info */}
           <div>
             <h3 className="text-xl font-bold text-white mb-4 relative inline-block">
               Contact Information
               <span className="absolute -bottom-1 left-0 w-12 h-0.5 bg-gradient-to-r from-[#48017a] to-[#ae7edc]"></span>
             </h3>
-            
+
             <div className="space-y-6 mb-8">
               {contactInfo.map((item, index) => (
                 <div key={index} className="flex items-start space-x-4">
@@ -75,8 +100,8 @@ export default function Footer() {
                   <div>
                     <h4 className="text-white font-medium">{item.title}</h4>
                     {item.link ? (
-                      <a 
-                        href={item.link} 
+                      <a
+                        href={item.link}
                         className="text-white/70 hover:text-[#ae7edc] transition-colors"
                       >
                         {item.value}
@@ -86,10 +111,11 @@ export default function Footer() {
                     )}
                   </div>
                 </div>
-              ))}            </div>
+              ))}{" "}
+            </div>
           </div>
         </div>
-        
+
         {/* Copyright */}
         <div className="pt-8 border-t border-slate-800/50 text-center">
           <p className="text-white/50 text-sm">

@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-50">
       <div className="container mx-auto">
-        <div className="w-full mx-auto bg-gray-600/20 backdrop-blur-xl rounded-full px-6 py-2 flex items-center justify-evenly gap-6 max-w-100 text-white/50">
+        <div className="w-full mx-auto dark:bg-gray-600/20 bg-[#250b69] backdrop-blur-xl rounded-full px-6 py-2 flex items-center justify-evenly gap-6 max-w-100 text-white/50">
           {/* Navbar inner */}
           <Link
             to="hero"

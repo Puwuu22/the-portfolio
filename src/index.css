@@ -1,8 +1,16 @@
 @import "tailwindcss";
 @import "tailwindcss-animated";
 
+@custom-variant dark (.dark &);
+
+@layer base {
+  body {
+    @apply bg-[#f6f0fd] dark:bg-[#080B2A] min-h-screen transition-colors duration-300;
+  }
+}
+
 .section {
-  @apply py-8 lg:py-16 lg:h-screen flex items-center;
+  @apply py-8 lg:h-screen flex items-center;
 }
 
 .active {

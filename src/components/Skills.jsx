@@ -26,10 +26,10 @@ export default function Skills() {
     { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "text-cyan-500" },
     { name: "Node.js", icon: <FaNodeJs />, color: "text-green-500" },
     { name: "MongoDB", icon: <SiMongodb />, color: "text-green-600" },
-    { name: "Express.js", icon: <SiExpress />, color: "text-green-600" },
-    { name: "Git/GitHub", icon: <FaGithub />, color: "text-gray-400" },
-    { name: "Figma", icon: <FaFigma />, color: "text-purple-400" },
-    { name: "Java", icon: <FaJava />, color: "text-white" },
+    { name: "Express.js", icon: <SiExpress />, color: "text-gray-600 dark:text-gray-400" },
+    { name: "Git/GitHub", icon: <FaGithub />, color: "text-gray-700 dark:text-gray-400" },
+    { name: "Figma", icon: <FaFigma />, color: "text-purple-500" },
+    { name: "Java", icon: <FaJava />, color: "text-red-500 dark:text-white" },
     { name: "SQL", icon: <SiMysql />, color: "text-cyan-600" },
   ];
 
@@ -110,12 +110,7 @@ export default function Skills() {
 
   return (
     <section className="min-h-screen py-20 lg:py-24 relative" id="skills">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.2 }}
-        transition={{ duration: 1.5 }}
-        className="absolute w-100 min-h-screen bg-indigo-500/20 -right-50 blur-3xl rounded-full"
-      ></motion.div>
+      <div className="absolute w-100 min-h-screen bg-violet-300/30 dark:bg-indigo-500/20 -right-50 blur-3xl rounded-full"></div>
       <div className="container mx-auto px-4 relative">
         <div className="text-left lg:text-center">
           {/* Title */}
@@ -127,7 +122,7 @@ export default function Skills() {
           >
             <motion.h2 
               variants={titleVariants}
-              className="relative text-3xl lg:text-4xl text-white font-bold inline-block"
+              className="relative text-3xl lg:text-4xl text-gray-800 dark:text-white font-bold inline-block"
             >
               Tech Skills
               <motion.span 
@@ -140,14 +135,14 @@ export default function Skills() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
-              className="text-white/70 max-w-2xl mx-auto"
+              className="dark:text-white/70 text-gray-600 max-w-2xl mx-auto"
             >
               I'm constantly learning and expanding my skillset. Here are the
               technologies and tools I'm proficient with.
             </motion.p>
           </motion.div>
 
-          {/* Skill List */}
+          {/* Skill List */}          
           <motion.div 
             variants={containerVariants}
             initial="hidden"
@@ -161,10 +156,9 @@ export default function Skills() {
                 variants={itemVariants}
                 whileHover={{ 
                   scale: 1.05,
-                  backgroundColor: "rgba(51, 65, 85, 0.5)",
                   boxShadow: "0 4px 20px rgba(82, 0, 255, 0.15)"
                 }}
-                className="flex flex-col rounded-lg items-center p-6 justify-center text-center transition-all duration-300 bg-slate-800/50"
+                className="flex flex-col rounded-lg items-center p-6 justify-center text-center transition-all duration-300 bg-white/80 dark:bg-slate-800/50 hover:bg-violet-100/70 dark:hover:bg-slate-700/70 border border-violet-200/50 dark:border-slate-700/50 shadow-sm"
               >
                 <motion.div 
                   className={`text-4xl mb-3 ${skill.color}`}
@@ -176,7 +170,7 @@ export default function Skills() {
                 >
                   {skill.icon}
                 </motion.div>
-                <h3 className="text-white font-medium">{skill.name}</h3>
+                <h3 className="text-gray-800 dark:text-white font-medium">{skill.name}</h3>
               </motion.div>
             ))}
           </motion.div>
@@ -193,9 +187,9 @@ export default function Skills() {
                 viewport={{ once: true }}
                 whileHover={{ y: -5, boxShadow: "0 10px 25px rgba(82, 0, 255, 0.1)" }}
                 transition={{ duration: 0.2 }}
-                className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50"
+                className="bg-white/80 dark:bg-slate-800/50 rounded-xl p-6 border border-violet-200/50 dark:border-slate-700/50 shadow-sm"
               >
-                <h3 className="text-xl font-bold text-white mb-4 relative inline-block">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-4 relative inline-block">
                   {category.title}
                   <motion.span 
                     initial={{ width: 0 }}
@@ -205,7 +199,7 @@ export default function Skills() {
                     className="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-[#48017a] to-transparent"
                   ></motion.span>
                 </h3>
-                <p className="text-white/50 mb-6">{category.description}</p>
+                <p className="text-gray-600 dark:text-white/50 mb-6">{category.description}</p>
                 <motion.div 
                   className="flex flex-wrap gap-2"
                   initial={{ opacity: 0 }}
@@ -224,12 +218,12 @@ export default function Skills() {
                         transition={{ delay: idx * 0.05 }}
                         viewport={{ once: true }}
                         whileHover={{ scale: 1.1, y: -2 }}
-                        className="flex items-center gap-1 bg-slate-700/50 rounded-full px-3 py-1"
+                        className="flex items-center gap-1 bg-violet-50 dark:bg-slate-700/50 rounded-full px-3 py-1 border border-violet-100/50 dark:border-slate-600/30"
                       >
                         <span className={`text-sm ${skill.color}`}>
                           {skill.icon}
                         </span>
-                        <span className="text-white/80 text-sm">
+                        <span className="text-gray-700 dark:text-white/80 text-sm">
                           {skill.name}
                         </span>
                       </motion.div>
