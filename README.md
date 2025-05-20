@@ -1,12 +1,38 @@
-# React + Vite
+# 🌐 React Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio built with **React**, **Tailwind CSS**, and **Framer Motion** to showcase projects, skills, and personal information. Designed with a clean UI, smooth animations, and support for dark/light themes.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [Visit Portfolio](https://puwuu22.github.io/the-portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Portfolio Preview](![image](https://github.com/user-attachments/assets/a689ef08-5789-4a60-854e-727e2b160915)
+)
+
+---
+
+## 🧾 Overview
+
+This portfolio serves as a central place to display my work, technical skills, and a bit about myself. It includes:
+
+- ✨ Smooth, modern UI animations
+- 🌓 Dark/Light mode with theme persistence
+- 📱 Fully responsive design for mobile, tablet, and desktop
+- 🔄 Filterable projects (All / In Progress / Completed)
+- 🚀 Animated skill categories
+- 🎯 Typing text animation effect
+- 📁 Project section with links to live demos & source code
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** – Frontend JavaScript library
+- **Tailwind CSS** – Utility-first CSS framework
+- **Framer Motion** – For advanced UI animations
+- **React Scroll** – Smooth scrolling between sections
+- **React Icons** – Icon set for UI
+- **React Type Animation** – Typing text animation
+- **Vite** – Fast development server and build tool
