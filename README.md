@@ -8,8 +8,8 @@ A modern, responsive personal portfolio built with **React**, **Tailwind CSS**, 
 
 ## 📸 Preview
 
-![Portfolio Preview](![image](https://github.com/user-attachments/assets/a689ef08-5789-4a60-854e-727e2b160915)
-)
+![Portfolio Preview](https://github.com/user-attachments/assets/a689ef08-5789-4a60-854e-727e2b160915)
+
 
 ---
 
