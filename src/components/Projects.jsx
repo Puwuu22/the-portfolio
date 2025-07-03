@@ -11,9 +11,9 @@ export default function Projects() {
         "A platform connecting students and tutors, helping students find tutors and tutors find students. Features a beautiful interface that is easy to manage and use",
       image: Tutor,
       category: "Web Development",
-      technologies: ["React"],
+      technologies: ["React", "SASS"],
       status: "Completed",
-      liveLink: "https://github.com/ryderthieu/SeiSei.git",
+      liveLink: "https://www.figma.com/proto/8H9yE3zEgWqO0nMrEPsnK4/Prototype?node-id=2228-10483&p=f&t=O5lCWhNwIvE0ag8R-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2228%3A10483&show-proto-sidebar=1",
       codeLink: "https://github.com/ryderthieu/SeiSei.git",
     },
     {

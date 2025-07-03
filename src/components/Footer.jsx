@@ -56,7 +56,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="dark:bg-slate-900/80 bg-indigo-950 backdrop-blur-sm pt-16 pb-8 border-t border-slate-800">
+    <footer id="footer" className="dark:bg-slate-900/80 bg-indigo-950 backdrop-blur-sm pt-16 pb-8 border-t border-slate-800">
       <div className="absolute w-100 min-h-screen bottom-[500px] bg-indigo-500/20 -right-50 blur-3xl rounded-full"></div>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">

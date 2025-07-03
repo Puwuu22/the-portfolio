@@ -6,7 +6,7 @@ export default function ToggleThemeButton() {
 
   return (
     <li className="list-none ml-10">
-      <div className="relative w-24 h-10 bg-[#faf9f3] rounded-full space-x-1 flex items-center dark:bg-zinc-700 dark:text-white overflow-hidden transition-colors">
+      <div className="relative w-24 h-10 bg-[#f8f3fa] rounded-full space-x-1 flex items-center dark:bg-zinc-700 dark:text-white overflow-hidden transition-colors">
         {/* Thumb */}
         <span
           className={`
@@ -30,7 +30,7 @@ export default function ToggleThemeButton() {
         <button
           onClick={() => setTheme("dark")}
           className={`relative z-10 flex items-center justify-center w-1/2 right-1 h-full rounded-full transition-colors
-            ${theme === "dark" ? "text-white/80" : "text-gray-400"}
+            ${theme === "dark" ? "text-white/80" : "text-indigo-800/50"}
           `}
           aria-label="Switch to dark mode"
         >

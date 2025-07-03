@@ -51,7 +51,7 @@ export default function Navbar() {
             <BriefcaseBusiness size={20} className="" />
           </Link>
           <Link
-            to="contact"
+            to="footer"
             activeClass="active"
             smooth={true}
             spy={true}
