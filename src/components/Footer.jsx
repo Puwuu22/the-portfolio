@@ -50,7 +50,7 @@ export default function Footer() {
     {
       icon: <FaPhoneAlt />,
       title: "Phone",
-      value: "+8868684090",
+      value: "+(84) 868684090",
       link: "tel:+84868684090",
     },
   ];
