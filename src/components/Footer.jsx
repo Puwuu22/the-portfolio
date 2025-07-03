@@ -24,11 +24,11 @@ export default function Footer() {
     {
       icon: <FaFacebook />,
       url: "https://fb.com/ttpuwu",
-      ariaLabel: "Instagram",
+      ariaLabel: "Facebook",
     },
     {
       icon: <FaEnvelope />,
-      url: "mailto:trinhquynh5d@gmail.com",
+      url: "mailto:phuongquynh.ttpq@gmail.com",
       ariaLabel: "Email",
     },
   ];
@@ -44,8 +44,8 @@ export default function Footer() {
     {
       icon: <FaEnvelope />,
       title: "Email",
-      value: "trinhquynh5d@gmail.com",
-      link: "mailto:trinhquynh5d@gmail.com",
+      value: "phuongquynh.ttpq@gmail.com",
+      link: "mailto:phuongquynh.ttpq@gmail.com",
     },
     {
       icon: <FaPhoneAlt />,
